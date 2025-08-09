@@ -1,0 +1,471 @@
+/* Universal styles and scoping */
+.gs-embed {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f10;
+    color: #ffffff;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+.gs-embed *,
+.gs-embed *::before,
+.gs-embed *::after {
+    box-sizing: inherit;
+}
+
+/* Typography */
+.gs-embed h1 {
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 700;
+}
+
+.gs-embed h2 {
+    font-size: 52px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.gs-embed h3 {
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 500;
+}
+
+.gs-embed .subhead {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.gs-embed .body1 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.gs-embed .body2 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.gs-embed .caption {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Buttons */
+.gs-embed button {
+    padding: 12px 24px;
+    border-radius: 16px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.gs-embed .primary-button,
+.gs-embed .signup-button,
+.gs-embed .ask-button {
+    background-color: #712FFF;
+    color: #ffffff;
+    border: 1px solid #712FFF;
+}
+
+.gs-embed .primary-button:hover,
+.gs-embed .signup-button:hover,
+.gs-embed .ask-button:hover {
+    background-color: #5a1acb;
+    border-color: #5a1acb;
+}
+
+.gs-embed .secondary-button,
+.gs-embed .clear-button,
+.gs-embed .prompt-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.gs-embed .secondary-button:hover,
+.gs-embed .clear-button:hover,
+.gs-embed .prompt-button:hover {
+    border-color: #712FFF;
+}
+
+/* Header */
+.gs-embed header {
+    background-color: #0f0f10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 72px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.gs-embed header .logo {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.gs-embed header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.gs-embed header nav ul li {
+    margin-right: 30px;
+}
+
+.gs-embed header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.gs-embed .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+    gap: 50px;
+}
+
+.gs-embed .hero-content {
+    max-width: 600px;
+}
+
+.gs-embed .hero-content h1 {
+    margin-bottom: 20px;
+}
+
+.gs-embed .hero-content p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 30px;
+}
+
+.gs-embed .hero-mockup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gs-embed .dashboard-card {
+    background-color: #0f0f10;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* How It Works Section */
+.gs-embed .how-it-works {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.gs-embed .how-it-works h2 {
+    margin-bottom: 50px;
+}
+
+.gs-embed .steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.gs-embed .step-card {
+    background-color: #0f0f10;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.gs-embed .step-card svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.gs-embed .step-card h3 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.gs-embed .step-card p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Prompt Library Section */
+.gs-embed .prompt-library {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.gs-embed .prompt-library h2 {
+    margin-bottom: 50px;
+}
+
+.gs-embed .prompts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gs-embed .prompt-button {
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+/* Prompt Console Section */
+.gs-embed .prompt-console {
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.gs-embed .console-card {
+    background-color: #fcfbf8;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.gs-embed .console-card input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #0f0f10;
+}
+
+.gs-embed .console-card input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.gs-embed .console-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.gs-embed .console-buttons button {
+    flex-grow: 1;
+}
+
+.gs-embed .result-area {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 20px;
+    color: #0f0f10;
+}
+
+.gs-embed .result-area strong {
+    color: #0f0f10;
+}
+
+.gs-embed .result-area ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.gs-embed .result-area .copy-answer-button {
+    background-color: #712FFF;
+    color: #ffffff;
+    border: 1px solid #712FFF;
+    width: auto;
+    margin-top: 20px;
+}
+
+/* Credibility Row Section */
+.gs-embed .credibility-row {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.gs-embed .credibility-row .pills {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.gs-embed .credibility-row .pill {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.gs-embed .credibility-row .disclosure {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+}
+
+/* Integrates With Grow Slash Section */
+.gs-embed .integrates-growslash {
+    background-color: #fcfbf8;
+    color: #0f0f10;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.gs-embed .integrates-growslash .content {
+    max-width: 600px;
+}
+
+.gs-embed .integrates-growslash p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.gs-embed .integrates-growslash .cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* FAQ Section */
+.gs-embed .faq {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.gs-embed .faq h2 {
+    margin-bottom: 50px;
+}
+
+.gs-embed .faq-items {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.gs-embed .faq-item {
+    background-color: #0f0f10;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.gs-embed .faq-item h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.gs-embed .faq-item p {
+    color: rgba(255, 255, 255, 0.85);
+    display: none; /* Hidden by default, will be toggled by JS */
+}
+
+/* Footer */
+.gs-embed footer {
+    background-color: #0f0f10;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.gs-embed .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.gs-embed .social-placeholders {
+    margin-top: 20px;
+    /* Add social icons here later */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gs-embed header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .gs-embed header nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .gs-embed header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .gs-embed .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gs-embed .hero-mockup {
+        flex-direction: column;
+    }
+
+    .gs-embed .integrates-growslash {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gs-embed .integrates-growslash .cta-buttons {
+        flex-direction: column;
+    }
+
+    .gs-embed h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .gs-embed h2 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .gs-embed h3 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .gs-embed .console-buttons {
+        flex-direction: column;
+    }
+}
+
+

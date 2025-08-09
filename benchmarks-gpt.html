@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Benchmarks</title>
+    <link rel="stylesheet" href="benchmarks-gpt.css">
+</head>
+<body>
+    <div class="gs-embed">
+        <!-- Header -->
+        <header>
+            <div class="logo">grow slash</div>
+            <nav>
+                <ul>
+                    <li><a href="/product">Product</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/metrics-hub">Metrics Hub</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>
+            <button class="signup-button">Sign up</button>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Maximize Your SaaS Metrics Growth with Actionable Insights</h1>
+                <p>Grow Slash Subscription Analytics Engine empowers growth opportunities with data-driven strategies.</p>
+                <button class="cta-button">Get Started</button>
+            </div>
+            <div class="hero-mockup">
+                <div class="dashboard-card">Chart Placeholder</div>
+                <div class="dashboard-card">Chart Placeholder</div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <h3>Ask</h3>
+                    <p>Type a question like 'Is 3% churn healthy?'</p>
+                </div>
+                <div class="step-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 11H1l6-6v4a7.64 7.64 0 0 1 6 2 7.64 7.64 0 0 1 6-2V5l6 6h-8a7.64 7.64 0 0 1-6 2 7.64 7.64 0 0 1-6-2z"></path>
+                    </svg>
+                    <h3>Get trusted answers</h3>
+                    <p>We summarize reliable SaaS benchmark sources.</p>
+                </div>
+                <div class="step-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="M21 21l-4.35-4.35"></path>
+                    </svg>
+                    <h3>Explore benchmarks</h3>
+                    <p>Dig deeper into industry KPIs and metrics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prompt Library Section -->
+        <section class="prompt-library">
+            <h2>Example Prompts</h2>
+            <div class="prompts-grid">
+                <button class="prompt-button">Is 3% monthly churn healthy for B2B SaaS at $100 ARPA?</button>
+                <button class="prompt-button">What's a good CAC payback for seed-stage SaaS?</button>
+                <button class="prompt-button">Benchmark LTV:CAC ratio for mid-market SaaS.</button>
+                <button class="prompt-button">What's typical ARPA for devtools SaaS?</button>
+                <button class="prompt-button">Net MRR retention benchmarks by ACV tier.</button>
+                <button class="prompt-button">Trial-to-paid conversion rate norm for SMB SaaS.</button>
+                <button class="prompt-button">Refund rate norms for consumer subscriptions.</button>
+                <button class="prompt-button">Quick Ratio ranges for fast-growing SaaS.</button>
+            </div>
+        </section>
+
+        <!-- Prompt Console Section -->
+        <section class="prompt-console">
+            <div class="console-card">
+                <input type="text" id="console-input" placeholder="Ask about churn, CAC, ARPA, LTV, Quick Ratio, etc.">
+                <div class="console-buttons">
+                    <button class="ask-button" id="ask-button">Ask</button>
+                    <button class="clear-button" id="clear-button">Clear</button>
+                </div>
+                <div class="result-area" id="result-area" style="display: none;">
+                    <p><strong>Answer:</strong> <span id="answer-text">This is where the benchmark answer appears.</span></p>
+                    <div class="key-stats">
+                        <p><strong>Key Stats:</strong></p>
+                        <ul id="stats-list">
+                            <li>Placeholder stat 1</li>
+                            <li>Placeholder stat 2</li>
+                        </ul>
+                    </div>
+                    <div class="sources">
+                        <p><strong>Sources:</strong></p>
+                        <ul id="sources-list">
+                            <li>Report Title — example.com — 2023</li>
+                            <li>Report Title — example.com — 2023</li>
+                        </ul>
+                    </div>
+                    <button class="copy-answer-button" id="copy-answer">Copy Answer</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credibility Row Section -->
+        <section class="credibility-row">
+            <div class="pills">
+                <span class="pill">Public sources only</span>
+                <span class="pill">Year-stamped citations</span>
+                <span class="pill">Cohort/context aware</span>
+            </div>
+            <p class="disclosure">This tool summarizes public benchmark sources. Always validate with your data.</p>
+        </section>
+
+        <!-- Integrates With Grow Slash Section -->
+        <section class="integrates-growslash">
+            <div class="content">
+                <p>Grow Slash turns your subscription data into clear dashboards for MRR, churn, ARPA, LTV, and more.</p>
+                <div class="cta-buttons">
+                    <button class="secondary-button">See Metrics Hub</button>
+                    <button class="primary-button">Start Free</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h2>FAQ</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h3>Q: Where do the benchmarks come from?</h3>
+                    <p>A: Placeholder answer.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: How fresh is the data?</h3>
+                    <p>A: Placeholder answer.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: Do I need an account?</h3>
+                    <p>A: Placeholder answer.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: Is my question stored?</h3>
+                    <p>A: Placeholder answer.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: Can I trust the results?</h3>
+                    <p>A: Placeholder answer.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: Can I export results?</h3>
+                    <p>A: Placeholder answer.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-links">
+                <a href="/terms">Terms</a>
+                <a href="/privacy">Privacy</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="social-placeholders">
+                <!-- Social icons here -->
+            </div>
+        </footer>
+    </div>
+    <script src="benchmarks-gpt.js"></script>
+</body>
+</html>
+
